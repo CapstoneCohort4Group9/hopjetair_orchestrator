@@ -138,7 +138,7 @@ def append_tool_result(state: GraphState) -> GraphState:
         # Use regex or basic check for <tool_call> tag
         if "<tool_call>" in content and "</tool_call>" in content:
             tool_msg = {
-                "role": "<|tool|>",
+                "role": "tool",
                 "content": f"<tool_response>{state['tool_output']}</tool_response>"
             }
             state["messages"].append(tool_msg)
