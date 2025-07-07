@@ -1,0 +1,38 @@
+{
+	"info": {
+		"_postman_id": "9bba9f7d-93f4-493c-bf7f-899530b59ece",
+		"name": "Hopjetair",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "33560539"
+	},
+	"item": [
+		{
+			"name": "ChatBot Endpoint API",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"message\": \"My booking reference number is YEYE2K\",\r\n    \"messages\": [\r\n        {\r\n            \"role\": \"user\",\r\n            \"content\": \"[intent=check_baggage_allowance][sentiment=Neutral] I'd like to know about my checked and carry-on baggage allowance. How could I find more information?\"\r\n        },\r\n        {\r\n            \"role\": \"assistant\",\r\n            \"content\": \"Thought: The user wants to know about their checked and carry-on baggage allowance and how to find more information. I should provide general info about baggage allowance and then ask for their booking reference to give specific details.\\nAction: Provide general info and ask for booking reference.\\nResponse: Sure! I can help you with that. To give you the exact baggage allowance for your flight, could you please provide your booking reference or ticket class? Also, if you want, I can guide you on how to check your baggage allowance online or through our app.\"\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8005/chat",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8005",
+					"path": [
+						"chat"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
