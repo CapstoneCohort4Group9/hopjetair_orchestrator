@@ -8,7 +8,8 @@ class Settings(BaseSettings):
     BOOK_FLIGHT_API_URL: str
     BAGGAGE_STATUS_API_URL: str
     CHECK_FLIGHT_OFFERS_API_URL: str
-
+    REDIS_HOST: str
+    REDIS_PORT: str
     BEDROCK_REGION: str
     BEDROCK_MODEL_ID: str
 

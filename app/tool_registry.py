@@ -35,6 +35,27 @@ INTENT_TOOL_MAP = {
             }
         }
     ],
+    "check_baggage_allowance": [
+    {
+        "name": "check_baggage_allowance",
+        "description": (
+            "check_baggage_allowance(booking_reference: str, airline: str, route: str, origin: str) -> dict - "
+            "Retrieve checked and carry-on baggage allowance based on booking reference, airline, route, or origin."
+        ),
+        "parameters": {
+            "type": "object",
+            "properties": {
+                "booking_reference": {"type": "string"},
+                "airline": {"type": "string"},
+                "route": {"type": "string"},
+                "origin": {"type": "string"},
+                "destination": {"type": "string"}
+            },
+            "required": []
+        }
+    }
+]
+
     # Add other intents here (up to 34 total)
 }
 
