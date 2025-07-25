@@ -151,7 +151,7 @@ def call_travel_or_rag_api(state: dict) -> dict:
             else:
                 query = _args_to_query_string(args)
 
-            r = httpx.post(RAG_API_URL, json={"query": query, "max_results": TOP_K_RESULTS})
+            r = httpx.post(settings.RAG_API_URL, json={"query": query })
             return {**state, "tool_output": r.json().get("answer", r.text)}
 
         # Normal POST APIs
