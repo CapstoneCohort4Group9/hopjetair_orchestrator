@@ -1,0 +1,75 @@
+name: Build Test and Push CHAT API to ECR
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch: # Allows manual execution
+
+env:
+  AWS_REGION: us-east-1
+  ECR_REPOSITORY: langgraph-api
+  AWS_ROLE_ARN: arn:aws:iam::109038807292:role/GitHubActionsRole
+
+permissions:
+  id-token: write # Required for OIDC
+  contents: read # Required to checkout code
+
+jobs:
+  ecr:
+    runs-on: ubuntu-latest
+    outputs:
+      image: ${{ steps.build-image.outputs.image }}
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Configure AWS credentials
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          role-to-assume: ${{ env.AWS_ROLE_ARN }}
+          aws-region: ${{ env.AWS_REGION }}
+          audience: sts.amazonaws.com
+
+      - name: Login to Amazon ECR
+        id: login-ecr
+        uses: aws-actions/amazon-ecr-login@v2
+
+      - name: Build Docker image
+        id: build-image
+        env:
+          ECR_REGISTRY: ${{ steps.login-ecr.outputs.registry }}
+        run: |
+          docker build -t $ECR_REGISTRY/$ECR_REPOSITORY .
+          echo "image=$ECR_REGISTRY/$ECR_REPOSITORY" >> $GITHUB_OUTPUT
+          echo "Built image: $ECR_REGISTRY/$ECR_REPOSITORY"
+
+      - name: Push image to Amazon ECR
+        env:
+          ECR_REGISTRY: ${{ steps.login-ecr.outputs.registry }}
+        run: |
+          docker push $ECR_REGISTRY/$ECR_REPOSITORY
+          echo "Pushed image to ECR: $ECR_REGISTRY/$ECR_REPOSITORY"
+
+      - name: Save image URI as artifact
+        run: |
+          echo "${{ steps.build-image.outputs.image }}" > image-uri.txt
+          echo "Saved image URI to image-uri.txt: $(cat image-uri.txt)"
+          ls -l image-uri.txt
+
+      - name: Upload image URI artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: image-uri
+          path: image-uri.txt
+          retention-days: 1 # Set short retention for testing
