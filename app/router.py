@@ -15,6 +15,11 @@ workflow_factory = WorkflowFactory(redis_url=f"redis://{settings.REDIS_HOST}:{se
 def get_compiled_workflow():
     return workflow_factory.get_workflow()
 
+@router.get("/health")
+async def health_check():
+    # Lightweight check for ALB
+    return {"status": "ok", "service": "new langgraph api"}
+
 
 @router.post("/chat")
 async def chat_endpoint(request: Request, workflow=Depends(get_compiled_workflow)):
