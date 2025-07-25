@@ -11,7 +11,6 @@ COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
 COPY app ./app
-COPY .env .
 COPY INTENT_TOOL_MAP.json .
 
 EXPOSE 8065
