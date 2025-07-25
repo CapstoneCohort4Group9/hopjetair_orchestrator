@@ -22,7 +22,7 @@ def get_bedrock_client_with_sts():
         if is_running_on_aws():
             session = boto3.Session()
             caller = session.client("sts").get_caller_identity()
-            print(f"[INFO] Using AWS environment credentials for: {caller['Arn']}")
+            #print(f"[INFO] Using AWS environment credentials for: {caller['Arn']}")
 
             return boto3.client(
                 "bedrock-runtime",

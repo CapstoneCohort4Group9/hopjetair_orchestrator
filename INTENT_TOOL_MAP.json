@@ -1,0 +1,3381 @@
+{
+  "search_flight": [
+    {
+      "name": "search_flight",
+      "description": "search_flight(destination: string, origin: string, trip_type: string) -> object - Auto-generated tool for search flight.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "preferred_departure_time": {
+            "type": "string"
+          },
+          "preferences": {
+            "type": "string"
+          },
+          "airline_type": {
+            "type": "string"
+          },
+          "trip_type": {
+            "type": "string"
+          },
+          "flight_preference": {
+            "type": "string"
+          },
+          "departure_date": {
+            "type": "string"
+          },
+          "preferred_time": {
+            "type": "string"
+          },
+          "class": {
+            "type": "string"
+          },
+          "origin": {
+            "type": "string"
+          },
+          "return_date": {
+            "type": "string"
+          },
+          "airline_preferences": {
+            "type": "string"
+          },
+          "direct_flights_only": {
+            "type": "number"
+          },
+          "departure_window": {
+            "type": "string"
+          },
+          "max_price": {
+            "type": "number"
+          },
+          "layover_preference": {
+            "type": "string"
+          },
+          "budget_per_person": {
+            "type": "number"
+          },
+          "max_price_per_passenger": {
+            "type": "number"
+          },
+          "airline": {
+            "type": "string"
+          },
+          "non_stop": {
+            "type": "number"
+          },
+          "budget": {
+            "type": "number"
+          },
+          "direct_only": {
+            "type": "number"
+          },
+          "passengers": {
+            "type": "number"
+          },
+          "destination": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "destination",
+          "origin",
+          "trip_type"
+        ]
+      }
+    }
+  ],
+  "book_flight": [
+    {
+      "name": "book_flight",
+      "description": "book_flight() -> object - Auto-generated tool for book flight.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "price_per_passenger": {
+            "type": "number"
+          },
+          "contact": {
+            "type": "string"
+          },
+          "trip_type": {
+            "type": "string"
+          },
+          "departure_date": {
+            "type": "string"
+          },
+          "preferred_time": {
+            "type": "string"
+          },
+          "class": {
+            "type": "string"
+          },
+          "price_per_person": {
+            "type": "number"
+          },
+          "return_date": {
+            "type": "string"
+          },
+          "origin": {
+            "type": "string"
+          },
+          "layover_preference": {
+            "type": "string"
+          },
+          "airline": {
+            "type": "string"
+          },
+          "non_stop": {
+            "type": "number"
+          },
+          "direct_only": {
+            "type": "number"
+          },
+          "flight_id": {
+            "type": "string"
+          },
+          "passengers": {
+            "type": "number"
+          },
+          "price": {
+            "type": "number"
+          },
+          "destination": {
+            "type": "string"
+          }
+        },
+        "required": []
+      }
+    }
+  ],
+  "book_trip": [
+    {
+      "name": "book_trip",
+      "description": "book_trip(destination: string) -> object - Auto-generated tool for book trip.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "preferences": {
+            "type": "string"
+          },
+          "duration": {
+            "type": "string"
+          },
+          "experience_type": {
+            "type": "string"
+          },
+          "trip_preferences": {
+            "type": "string"
+          },
+          "trip_type": {
+            "type": "string"
+          },
+          "trip_purpose": {
+            "type": "string"
+          },
+          "special_sites": {
+            "type": "string"
+          },
+          "accommodation": {
+            "type": "string"
+          },
+          "departure_date": {
+            "type": "string"
+          },
+          "class": {
+            "type": "string"
+          },
+          "excursion_type": {
+            "type": "string"
+          },
+          "origin": {
+            "type": "string"
+          },
+          "return_date": {
+            "type": "string"
+          },
+          "excursion": {
+            "type": "string"
+          },
+          "accommodation_preference": {
+            "type": "string"
+          },
+          "budget_per_person": {
+            "type": "number"
+          },
+          "trip_duration_days": {
+            "type": "number"
+          },
+          "activities": {
+            "type": "string"
+          },
+          "activity_type": {
+            "type": "string"
+          },
+          "budget": {
+            "type": "number"
+          },
+          "interests": {
+            "type": "string"
+          },
+          "include_hotel": {
+            "type": "number"
+          },
+          "passengers": {
+            "type": "string"
+          },
+          "trip_category": {
+            "type": "string"
+          },
+          "package": {
+            "type": "string"
+          },
+          "experience": {
+            "type": "string"
+          },
+          "travel_style": {
+            "type": "string"
+          },
+          "destination": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "destination"
+        ]
+      }
+    }
+  ],
+  "get_trip_cancellation_policy": [
+    {
+      "name": "get_trip_cancellation_policy",
+      "description": "get_trip_cancellation_policy(booking_reference: string) -> object - Auto-generated tool for get trip cancellation policy.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "booking_date": {
+            "type": "string"
+          },
+          "date_of_birth": {
+            "type": "string"
+          },
+          "booking_reference": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "booking_reference"
+        ]
+      }
+    }
+  ],
+  "cancel_trip": [
+    {
+      "name": "cancel_trip",
+      "description": "cancel_trip(booking_reference: string) -> object - Auto-generated tool for cancel trip.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "travel_dates": {
+            "type": "string"
+          },
+          "excursion_name": {
+            "type": "string"
+          },
+          "booking_reference": {
+            "type": "string"
+          },
+          "email": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "departure_date": {
+            "type": "string"
+          },
+          "cancellation_reason": {
+            "type": "string"
+          },
+          "full_name": {
+            "type": "string"
+          },
+          "trip_dates": {
+            "type": "string"
+          },
+          "booking_date": {
+            "type": "string"
+          },
+          "departure_city": {
+            "type": "string"
+          },
+          "refund_option": {
+            "type": "string"
+          },
+          "last_name": {
+            "type": "string"
+          },
+          "destination": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "booking_reference"
+        ]
+      }
+    }
+  ],
+  "get_trip_segments": [
+    {
+      "name": "get_trip_segments",
+      "description": "get_trip_segments(booking_reference: string) -> object - Auto-generated tool for get trip segments.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "booking_reference": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "booking_reference"
+        ]
+      }
+    }
+  ],
+  "get_excursion_cancellation_policy": [
+    {
+      "name": "get_excursion_cancellation_policy",
+      "description": "get_excursion_cancellation_policy(booking_reference: string) -> object - Auto-generated tool for get excursion cancellation policy.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "booking_reference": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "booking_reference"
+        ]
+      }
+    }
+  ],
+  "check_excursion_availability": [
+    {
+      "name": "check_excursion_availability",
+      "description": "check_excursion_availability(booking_reference: string, new_departure_date: string) -> object - Auto-generated tool for check excursion availability.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "new_departure_date": {
+            "type": "string"
+          },
+          "booking_reference": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "booking_reference",
+          "new_departure_date"
+        ]
+      }
+    }
+  ],
+  "book_excursion": [
+    {
+      "name": "book_excursion",
+      "description": "book_excursion(departure_date: string) -> object - Auto-generated tool for book excursion.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "departure_date": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "departure_date"
+        ]
+      }
+    }
+  ],
+  "change_flight": [
+    {
+      "name": "change_flight",
+      "description": "change_flight() -> object - Auto-generated tool for change flight.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "confirmation_number": {
+            "type": "string"
+          },
+          "new_arrival_date": {
+            "type": "string"
+          },
+          "change_fee": {
+            "type": "number"
+          },
+          "booking_reference": {
+            "type": "string"
+          },
+          "new_date": {
+            "type": "string"
+          },
+          "fare_type": {
+            "type": "string"
+          },
+          "new_travel_date": {
+            "type": "string"
+          },
+          "new_class": {
+            "type": "string"
+          },
+          "change_type": {
+            "type": "string"
+          },
+          "arrival_city": {
+            "type": "string"
+          },
+          "preferred_new_dates": {
+            "type": "string"
+          },
+          "date": {
+            "type": "string"
+          },
+          "departure_city": {
+            "type": "string"
+          },
+          "origin": {
+            "type": "string"
+          },
+          "flight_number": {
+            "type": "string"
+          },
+          "destination": {
+            "type": "string"
+          },
+          "new_flight_number": {
+            "type": "string"
+          },
+          "new_departure_date_offset_days": {
+            "type": "number"
+          },
+          "new_flight": {
+            "type": "string"
+          },
+          "airline_preference": {
+            "type": "string"
+          },
+          "new_departure_time": {
+            "type": "string"
+          },
+          "airline": {
+            "type": "string"
+          },
+          "new_flight_time": {
+            "type": "string"
+          },
+          "original_departure": {
+            "type": "string"
+          },
+          "new_flight_date": {
+            "type": "string"
+          },
+          "desired_date_range": {
+            "type": "string"
+          },
+          "new_time": {
+            "type": "string"
+          },
+          "new_departure_date": {
+            "type": "string"
+          },
+          "original_arrival": {
+            "type": "string"
+          },
+          "modification_type": {
+            "type": "string"
+          },
+          "new_destination": {
+            "type": "string"
+          }
+        },
+        "required": []
+      }
+    }
+  ],
+  "query_policy_rag_db": [
+    {
+      "name": "query_policy_rag_db",
+      "description": "query_policy_rag_db(query: string) -> object - Auto-generated tool for query policy rag db.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "query": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "query"
+        ]
+      }
+    }
+  ],
+  "search_flights": [
+    {
+      "name": "search_flights",
+      "description": "search_flights() -> object - Auto-generated tool for search flights.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "return_window": {
+            "type": "string"
+          },
+          "departure_date_offset_days": {
+            "type": "number"
+          },
+          "end_date": {
+            "type": "string"
+          },
+          "date": {
+            "type": "string"
+          },
+          "departure_date_range": {
+            "type": "string"
+          },
+          "return_date": {
+            "type": "string"
+          },
+          "from": {
+            "type": "string"
+          },
+          "budget": {
+            "type": "number"
+          },
+          "filters": {
+            "type": "string"
+          },
+          "sort_by": {
+            "type": "string"
+          },
+          "start_date": {
+            "type": "string"
+          },
+          "destination": {
+            "type": "string"
+          },
+          "preferences": {
+            "type": "string"
+          },
+          "trip_type": {
+            "type": "string"
+          },
+          "earliest_departure_time": {
+            "type": "string"
+          },
+          "booking_reference": {
+            "type": "string"
+          },
+          "to": {
+            "type": "string"
+          },
+          "new_date": {
+            "type": "string"
+          },
+          "preferred_time": {
+            "type": "string"
+          },
+          "departure_date": {
+            "type": "string"
+          },
+          "class": {
+            "type": "string"
+          },
+          "time_preference": {
+            "type": "string"
+          },
+          "arrival_city": {
+            "type": "string"
+          },
+          "origin_airports": {
+            "type": "string"
+          },
+          "departure_city": {
+            "type": "string"
+          },
+          "origin": {
+            "type": "string"
+          },
+          "departure_window": {
+            "type": "string"
+          },
+          "max_price": {
+            "type": "number"
+          },
+          "travel_class": {
+            "type": "string"
+          },
+          "date_range": {
+            "type": "string"
+          },
+          "passengers": {
+            "type": "number"
+          }
+        },
+        "required": []
+      }
+    }
+  ],
+  "get_booking_details": [
+    {
+      "name": "get_booking_details",
+      "description": "get_booking_details(booking_reference: string, passenger_name: string) -> object - Auto-generated tool for get booking details.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "passenger_name": {
+            "type": "string"
+          },
+          "booking_reference": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "booking_reference",
+          "passenger_name"
+        ]
+      }
+    }
+  ],
+  "check_flight_availability": [
+    {
+      "name": "check_flight_availability",
+      "description": "check_flight_availability(date: string) -> object - Auto-generated tool for check flight availability.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "to": {
+            "type": "string"
+          },
+          "date": {
+            "type": "string"
+          },
+          "origin": {
+            "type": "string"
+          },
+          "from": {
+            "type": "string"
+          },
+          "class": {
+            "type": "string"
+          },
+          "destination": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "date"
+        ]
+      }
+    }
+  ],
+  "cancel_booking": [
+    {
+      "name": "cancel_booking",
+      "description": "cancel_booking(confirmation_number: string) -> object - Auto-generated tool for cancel booking.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "confirmation_number": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "confirmation_number"
+        ]
+      }
+    }
+  ],
+  "query_flight_availability": [
+    {
+      "name": "query_flight_availability",
+      "description": "query_flight_availability(date: string, destination: string, origin: string, time_of_day: string) -> object - Auto-generated tool for query flight availability.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "destination": {
+            "type": "string"
+          },
+          "time_of_day": {
+            "type": "string"
+          },
+          "date": {
+            "type": "string"
+          },
+          "origin": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "date",
+          "destination",
+          "origin",
+          "time_of_day"
+        ]
+      }
+    }
+  ],
+  "check_flight_availability_and_fare": [
+    {
+      "name": "check_flight_availability_and_fare",
+      "description": "check_flight_availability_and_fare(booking_reference: string, new_date: string) -> object - Auto-generated tool for check flight availability and fare.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "new_date": {
+            "type": "string"
+          },
+          "booking_reference": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "booking_reference",
+          "new_date"
+        ]
+      }
+    }
+  ],
+  "confirm_flight_change": [
+    {
+      "name": "confirm_flight_change",
+      "description": "confirm_flight_change(booking_reference: string, new_departure_date: string) -> object - Auto-generated tool for confirm flight change.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "new_departure_date": {
+            "type": "string"
+          },
+          "booking_reference": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "booking_reference",
+          "new_departure_date"
+        ]
+      }
+    }
+  ],
+  "check_seat_availability": [
+    {
+      "name": "check_seat_availability",
+      "description": "check_seat_availability(booking_reference: string) -> object - Auto-generated tool for check seat availability.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "booking_reference": {
+            "type": "string"
+          },
+          "flight_time": {
+            "type": "string"
+          },
+          "seat_preference": {
+            "type": "string"
+          },
+          "flight_number": {
+            "type": "string"
+          },
+          "flight_date": {
+            "type": "string"
+          },
+          "last_name": {
+            "type": "string"
+          },
+          "near_exit": {
+            "type": "number"
+          }
+        },
+        "required": [
+          "booking_reference"
+        ]
+      }
+    }
+  ],
+  "change_seat": [
+    {
+      "name": "change_seat",
+      "description": "change_seat(booking_reference: string, new_seat: string) -> object - Auto-generated tool for change seat.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "new_seat": {
+            "type": "string"
+          },
+          "booking_reference": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "booking_reference",
+          "new_seat"
+        ]
+      }
+    }
+  ],
+  "change_trip": [
+    {
+      "name": "change_trip",
+      "description": "change_trip(booking_reference: string) -> object - Auto-generated tool for change trip.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "original_excursion": {
+            "type": "string"
+          },
+          "booking_reference": {
+            "type": "string"
+          },
+          "cancel_trip": {
+            "type": "number"
+          },
+          "new_excursion_destination": {
+            "type": "string"
+          },
+          "new_class": {
+            "type": "string"
+          },
+          "hotel_upgrade": {
+            "type": "string"
+          },
+          "original_date": {
+            "type": "string"
+          },
+          "new_return_date": {
+            "type": "string"
+          },
+          "excursion_type": {
+            "type": "string"
+          },
+          "hotel": {
+            "type": "string"
+          },
+          "new_excursion_date": {
+            "type": "string"
+          },
+          "change_excursion": {
+            "type": "number"
+          },
+          "new_excursion_start_date": {
+            "type": "string"
+          },
+          "excursion": {
+            "type": "string"
+          },
+          "new_excursion_end_date": {
+            "type": "string"
+          },
+          "activity_changes": {
+            "type": "string"
+          },
+          "excursion_name": {
+            "type": "string"
+          },
+          "add_excursion": {
+            "type": "string"
+          },
+          "additional_passengers": {
+            "type": "number"
+          },
+          "remove_excursion": {
+            "type": "number"
+          },
+          "new_excursion": {
+            "type": "string"
+          },
+          "excursion_date": {
+            "type": "string"
+          },
+          "travelers": {
+            "type": "number"
+          },
+          "preferred_flight_time": {
+            "type": "string"
+          },
+          "excursion_location": {
+            "type": "string"
+          },
+          "new_departure_date": {
+            "type": "string"
+          },
+          "cancel": {
+            "type": "number"
+          },
+          "remove_activities": {
+            "type": "string"
+          },
+          "cancel_excursion": {
+            "type": "number"
+          },
+          "departure_location": {
+            "type": "string"
+          },
+          "add_activities": {
+            "type": "string"
+          },
+          "new_destination": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "booking_reference"
+        ]
+      }
+    }
+  ],
+  "check_arrival_time": [
+    {
+      "name": "check_arrival_time",
+      "description": "check_arrival_time() -> object - Auto-generated tool for check arrival time.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "passenger_name": {
+            "type": "string"
+          },
+          "airline": {
+            "type": "string"
+          },
+          "booking_reference": {
+            "type": "string"
+          },
+          "arrival_airport": {
+            "type": "string"
+          },
+          "departure_airport": {
+            "type": "string"
+          },
+          "destination_airport": {
+            "type": "string"
+          },
+          "date": {
+            "type": "string"
+          },
+          "departure_city": {
+            "type": "string"
+          },
+          "flight_number": {
+            "type": "string"
+          },
+          "origin_airport": {
+            "type": "string"
+          },
+          "last_name": {
+            "type": "string"
+          },
+          "destination": {
+            "type": "string"
+          }
+        },
+        "required": []
+      }
+    }
+  ],
+  "check_baggage_allowance": [
+    {
+      "name": "check_baggage_allowance",
+      "description": "check_baggage_allowance() -> object - Auto-generated tool for check baggage allowance.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "passenger_name": {
+            "type": "string"
+          },
+          "membership": {
+            "type": "string"
+          },
+          "booking_reference": {
+            "type": "string"
+          },
+          "arrival": {
+            "type": "string"
+          },
+          "departure_date": {
+            "type": "string"
+          },
+          "class": {
+            "type": "string"
+          },
+          "date": {
+            "type": "string"
+          },
+          "departure_city": {
+            "type": "string"
+          },
+          "flight_number": {
+            "type": "string"
+          },
+          "origin": {
+            "type": "string"
+          },
+          "membership_status": {
+            "type": "string"
+          },
+          "return_date": {
+            "type": "string"
+          },
+          "outbound_flight": {
+            "type": "string"
+          },
+          "carry_on_bags": {
+            "type": "number"
+          },
+          "return_flight": {
+            "type": "string"
+          },
+          "extra_baggage_info": {
+            "type": "number"
+          },
+          "departure": {
+            "type": "string"
+          },
+          "checked_bags": {
+            "type": "number"
+          },
+          "airline": {
+            "type": "string"
+          },
+          "travel_date": {
+            "type": "string"
+          },
+          "extra_checked_bags": {
+            "type": "number"
+          },
+          "departure_country": {
+            "type": "string"
+          },
+          "route_type": {
+            "type": "string"
+          },
+          "destination": {
+            "type": "string"
+          }
+        },
+        "required": []
+      }
+    }
+  ],
+  "check_cancellation_fee": [
+    {
+      "name": "check_cancellation_fee",
+      "description": "check_cancellation_fee() -> object - Auto-generated tool for check cancellation fee.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "trip_status": {
+            "type": "string"
+          },
+          "confirmation_number": {
+            "type": "string"
+          },
+          "query": {
+            "type": "string"
+          },
+          "route": {
+            "type": "string"
+          },
+          "trip_type": {
+            "type": "string"
+          },
+          "booking_reference": {
+            "type": "string"
+          },
+          "ticket_type": {
+            "type": "string"
+          },
+          "service_type": {
+            "type": "string"
+          },
+          "departure_date": {
+            "type": "string"
+          },
+          "termination_reason": {
+            "type": "string"
+          },
+          "query_type": {
+            "type": "string"
+          },
+          "departure_airport": {
+            "type": "string"
+          },
+          "change_date": {
+            "type": "string"
+          },
+          "trip_end_date": {
+            "type": "string"
+          },
+          "flight_route": {
+            "type": "string"
+          },
+          "early_termination": {
+            "type": "number"
+          },
+          "fare_class": {
+            "type": "string"
+          },
+          "flight_date": {
+            "type": "string"
+          },
+          "origin": {
+            "type": "string"
+          },
+          "trip_start_date": {
+            "type": "string"
+          },
+          "last_name": {
+            "type": "string"
+          },
+          "travel_type": {
+            "type": "string"
+          },
+          "travel_date": {
+            "type": "string"
+          },
+          "traveler_name": {
+            "type": "string"
+          },
+          "email": {
+            "type": "string"
+          },
+          "reference_number": {
+            "type": "string"
+          },
+          "ticket_class": {
+            "type": "string"
+          },
+          "booking_date": {
+            "type": "string"
+          },
+          "booking_type": {
+            "type": "string"
+          },
+          "trip_dates": {
+            "type": "string"
+          },
+          "trip_details": {
+            "type": "string"
+          },
+          "fee_type": {
+            "type": "string"
+          },
+          "destination": {
+            "type": "string"
+          }
+        },
+        "required": []
+      }
+    }
+  ],
+  "check_departure_time": [
+    {
+      "name": "check_departure_time",
+      "description": "check_departure_time() -> object - Auto-generated tool for check departure time.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "passenger_name": {
+            "type": "string"
+          },
+          "airline": {
+            "type": "string"
+          },
+          "booking_reference": {
+            "type": "string"
+          },
+          "departure_airport": {
+            "type": "string"
+          },
+          "date": {
+            "type": "string"
+          },
+          "flight_number": {
+            "type": "string"
+          },
+          "last_name": {
+            "type": "string"
+          }
+        },
+        "required": []
+      }
+    }
+  ],
+  "check_flight_insurance_coverage": [
+    {
+      "name": "check_flight_insurance_coverage",
+      "description": "check_flight_insurance_coverage() -> object - Auto-generated tool for check flight insurance coverage.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "travel_dates": {
+            "type": "string"
+          },
+          "trip_type": {
+            "type": "string"
+          },
+          "trip_date": {
+            "type": "string"
+          },
+          "booking_reference": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "trip_end_date": {
+            "type": "string"
+          },
+          "date": {
+            "type": "string"
+          },
+          "flight_date": {
+            "type": "string"
+          },
+          "flight_number": {
+            "type": "string"
+          },
+          "itinerary_reference": {
+            "type": "string"
+          },
+          "travel_start_date": {
+            "type": "string"
+          },
+          "last_name": {
+            "type": "string"
+          },
+          "trip_start_date": {
+            "type": "string"
+          },
+          "travel_type": {
+            "type": "string"
+          },
+          "id_last4": {
+            "type": "string"
+          },
+          "airline": {
+            "type": "string"
+          },
+          "traveler_name": {
+            "type": "string"
+          },
+          "email": {
+            "type": "string"
+          },
+          "policy_number": {
+            "type": "string"
+          },
+          "full_name": {
+            "type": "string"
+          },
+          "booking_date": {
+            "type": "string"
+          },
+          "travel_end_date": {
+            "type": "string"
+          },
+          "destination": {
+            "type": "string"
+          }
+        },
+        "required": []
+      }
+    }
+  ],
+  "check_flight_offers": [
+    {
+      "name": "check_flight_offers",
+      "description": "check_flight_offers() -> object - Auto-generated tool for check flight offers.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "stop_preference": {
+            "type": "string"
+          },
+          "airline_type": {
+            "type": "string"
+          },
+          "cabin_class": {
+            "type": "string"
+          },
+          "trip_type": {
+            "type": "string"
+          },
+          "traveler_count": {
+            "type": "number"
+          },
+          "flexible_dates": {
+            "type": "number"
+          },
+          "preferred_time": {
+            "type": "string"
+          },
+          "departure_date": {
+            "type": "string"
+          },
+          "class": {
+            "type": "string"
+          },
+          "end_date": {
+            "type": "string"
+          },
+          "month": {
+            "type": "string"
+          },
+          "detailed": {
+            "type": "number"
+          },
+          "flight_preferences": {
+            "type": "string"
+          },
+          "return_date": {
+            "type": "string"
+          },
+          "flight_type": {
+            "type": "string"
+          },
+          "origin": {
+            "type": "string"
+          },
+          "flight_class": {
+            "type": "string"
+          },
+          "max_price": {
+            "type": "number"
+          },
+          "travel_class": {
+            "type": "string"
+          },
+          "airline_preference": {
+            "type": "string"
+          },
+          "date_range": {
+            "type": "string"
+          },
+          "travel_month": {
+            "type": "string"
+          },
+          "flexibility": {
+            "type": "string"
+          },
+          "budget": {
+            "type": "number"
+          },
+          "trip_length_days": {
+            "type": "number"
+          },
+          "travelers": {
+            "type": "number"
+          },
+          "direct_flights": {
+            "type": "number"
+          },
+          "passengers": {
+            "type": "number"
+          },
+          "passenger_count": {
+            "type": "number"
+          },
+          "start_date": {
+            "type": "string"
+          },
+          "price_range": {
+            "type": "number"
+          },
+          "max_budget": {
+            "type": "number"
+          },
+          "destination": {
+            "type": "string"
+          }
+        },
+        "required": []
+      }
+    }
+  ],
+  "search_flight_prices": [
+    {
+      "name": "search_flight_prices",
+      "description": "search_flight_prices(destination: string) -> object - Auto-generated tool for search flight prices.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "preferences": {
+            "type": "string"
+          },
+          "return_date_range": {
+            "type": "string"
+          },
+          "cabin_class": {
+            "type": "string"
+          },
+          "trip_type": {
+            "type": "string"
+          },
+          "departure_date": {
+            "type": "string"
+          },
+          "departure_date_range": {
+            "type": "string"
+          },
+          "return_date": {
+            "type": "string"
+          },
+          "origin": {
+            "type": "string"
+          },
+          "travel_class": {
+            "type": "string"
+          },
+          "sort_by": {
+            "type": "string"
+          },
+          "passengers": {
+            "type": "string"
+          },
+          "limit": {
+            "type": "number"
+          },
+          "direct_flight": {
+            "type": "number"
+          },
+          "nonstop": {
+            "type": "number"
+          },
+          "destination": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "destination"
+        ]
+      }
+    }
+  ],
+  "check_flight_prices": [
+    {
+      "name": "check_flight_prices",
+      "description": "check_flight_prices(destination: string, origin: string) -> object - Auto-generated tool for check flight prices.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "return_date_range": {
+            "type": "string"
+          },
+          "departure_date": {
+            "type": "string"
+          },
+          "preferred_airlines": {
+            "type": "string"
+          },
+          "origin": {
+            "type": "string"
+          },
+          "passengers": {
+            "type": "string"
+          },
+          "departure_date_range": {
+            "type": "string"
+          },
+          "return_date": {
+            "type": "string"
+          },
+          "destination": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "destination",
+          "origin"
+        ]
+      }
+    }
+  ],
+  "check_flight_reservation": [
+    {
+      "name": "check_flight_reservation",
+      "description": "check_flight_reservation() -> object - Auto-generated tool for check flight reservation.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "travel_dates": {
+            "type": "string"
+          },
+          "date_of_travel": {
+            "type": "string"
+          },
+          "preferences": {
+            "type": "string"
+          },
+          "confirmation_number": {
+            "type": "string"
+          },
+          "first_name": {
+            "type": "string"
+          },
+          "trip_date": {
+            "type": "string"
+          },
+          "booking_reference": {
+            "type": "string"
+          },
+          "departure_date": {
+            "type": "string"
+          },
+          "arrival_city": {
+            "type": "string"
+          },
+          "travel_month_year": {
+            "type": "string"
+          },
+          "departure_city": {
+            "type": "string"
+          },
+          "return_date": {
+            "type": "string"
+          },
+          "origin": {
+            "type": "string"
+          },
+          "flight_number": {
+            "type": "string"
+          },
+          "destination_city": {
+            "type": "string"
+          },
+          "flight_date": {
+            "type": "string"
+          },
+          "last_name": {
+            "type": "string"
+          },
+          "travel_start_date": {
+            "type": "string"
+          },
+          "date": {
+            "type": "string"
+          },
+          "date_range": {
+            "type": "string"
+          },
+          "travel_date": {
+            "type": "string"
+          },
+          "date_of_birth": {
+            "type": "string"
+          },
+          "email": {
+            "type": "string"
+          },
+          "full_name": {
+            "type": "string"
+          },
+          "travelers": {
+            "type": "number"
+          },
+          "passenger_count": {
+            "type": "number"
+          },
+          "flight_date_range": {
+            "type": "string"
+          },
+          "travel_end_date": {
+            "type": "string"
+          },
+          "destination": {
+            "type": "string"
+          }
+        },
+        "required": []
+      }
+    }
+  ],
+  "send_itinerary_email": [
+    {
+      "name": "send_itinerary_email",
+      "description": "send_itinerary_email(booking_reference: string, email: string) -> object - Auto-generated tool for send itinerary email.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "email": {
+            "type": "string"
+          },
+          "booking_reference": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "booking_reference",
+          "email"
+        ]
+      }
+    }
+  ],
+  "check_flight_status": [
+    {
+      "name": "check_flight_status",
+      "description": "check_flight_status() -> object - Auto-generated tool for check flight status.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "confirmation_number": {
+            "type": "string"
+          },
+          "flight_number": {
+            "type": "string"
+          },
+          "airline": {
+            "type": "string"
+          },
+          "booking_reference": {
+            "type": "string"
+          },
+          "arrival_airport": {
+            "type": "string"
+          },
+          "departure_airport": {
+            "type": "string"
+          },
+          "destination_airport": {
+            "type": "string"
+          },
+          "arrival_city": {
+            "type": "string"
+          },
+          "date": {
+            "type": "string"
+          },
+          "departure_city": {
+            "type": "string"
+          },
+          "origin": {
+            "type": "string"
+          },
+          "destination_city": {
+            "type": "string"
+          },
+          "last_name": {
+            "type": "string"
+          },
+          "destination": {
+            "type": "string"
+          }
+        },
+        "required": []
+      }
+    }
+  ],
+  "get_boarding_pass": [
+    {
+      "name": "get_boarding_pass",
+      "description": "get_boarding_pass() -> object - Auto-generated tool for get boarding pass.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "passenger_name": {
+            "type": "string"
+          },
+          "confirmation_email": {
+            "type": "string"
+          },
+          "departure_time": {
+            "type": "string"
+          },
+          "booking_reference": {
+            "type": "string"
+          },
+          "departure_airport": {
+            "type": "string"
+          },
+          "passenger_last_name": {
+            "type": "string"
+          },
+          "arrival_city": {
+            "type": "string"
+          },
+          "flight_date": {
+            "type": "string"
+          },
+          "flight_number": {
+            "type": "string"
+          },
+          "reservation_id": {
+            "type": "string"
+          },
+          "departure_city": {
+            "type": "string"
+          },
+          "flight_type": {
+            "type": "string"
+          },
+          "origin": {
+            "type": "string"
+          },
+          "last_name": {
+            "type": "string"
+          },
+          "departure_datetime": {
+            "type": "string"
+          },
+          "travel_date": {
+            "type": "string"
+          },
+          "airline": {
+            "type": "string"
+          },
+          "email": {
+            "type": "string"
+          },
+          "departure_location": {
+            "type": "string"
+          },
+          "destination": {
+            "type": "string"
+          }
+        },
+        "required": []
+      }
+    }
+  ],
+  "check_in": [
+    {
+      "name": "check_in",
+      "description": "check_in(flight_number: string) -> object - Auto-generated tool for check in.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "airline": {
+            "type": "string"
+          },
+          "flight_number": {
+            "type": "string"
+          },
+          "destination": {
+            "type": "string"
+          },
+          "last_name": {
+            "type": "string"
+          },
+          "confirmation_id": {
+            "type": "string"
+          },
+          "departure_airport": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "flight_number"
+        ]
+      }
+    }
+  ],
+  "check_in_passenger": [
+    {
+      "name": "check_in_passenger",
+      "description": "check_in_passenger() -> object - Auto-generated tool for check in passenger.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "confirmation_number": {
+            "type": "string"
+          },
+          "travel_date": {
+            "type": "string"
+          },
+          "airline": {
+            "type": "string"
+          },
+          "booking_reference": {
+            "type": "string"
+          },
+          "confirmation_last4": {
+            "type": "string"
+          },
+          "date_of_birth": {
+            "type": "string"
+          },
+          "full_name": {
+            "type": "string"
+          },
+          "departure_airport": {
+            "type": "string"
+          },
+          "ssn_last4": {
+            "type": "string"
+          },
+          "flight_number": {
+            "type": "string"
+          },
+          "last_name": {
+            "type": "string"
+          },
+          "check_in_method": {
+            "type": "string"
+          },
+          "destination": {
+            "type": "string"
+          }
+        },
+        "required": []
+      }
+    }
+  ],
+  "get_airline_checkin_baggage_info": [
+    {
+      "name": "get_airline_checkin_baggage_info",
+      "description": "get_airline_checkin_baggage_info(airline: string) -> object - Auto-generated tool for get airline checkin baggage info.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "airline": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "airline"
+        ]
+      }
+    }
+  ],
+  "resend_boarding_pass": [
+    {
+      "name": "resend_boarding_pass",
+      "description": "resend_boarding_pass(email: string) -> object - Auto-generated tool for resend boarding pass.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "email": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "email"
+        ]
+      }
+    }
+  ],
+  "get_check_in_info": [
+    {
+      "name": "get_check_in_info",
+      "description": "get_check_in_info() -> object - Auto-generated tool for get check in info.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "ticket_type": {
+            "type": "string"
+          },
+          "travel_date": {
+            "type": "string"
+          },
+          "airline": {
+            "type": "string"
+          },
+          "booking_reference": {
+            "type": "string"
+          },
+          "airport": {
+            "type": "string"
+          },
+          "departure_airport": {
+            "type": "string"
+          },
+          "flight_number": {
+            "type": "string"
+          },
+          "last_name": {
+            "type": "string"
+          }
+        },
+        "required": []
+      }
+    }
+  ],
+  "query_airport_checkin_info": [
+    {
+      "name": "query_airport_checkin_info",
+      "description": "query_airport_checkin_info(airport_code: string, info_requested: string) -> object - Auto-generated tool for query airport checkin info.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "airport_code": {
+            "type": "string"
+          },
+          "info_requested": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "airport_code",
+          "info_requested"
+        ]
+      }
+    }
+  ],
+  "schedule_callback": [
+    {
+      "name": "schedule_callback",
+      "description": "schedule_callback(booking_reference: string, last_name: string, phone_number: string, purpose: string) -> object - Auto-generated tool for schedule callback.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "booking_reference": {
+            "type": "string"
+          },
+          "last_name": {
+            "type": "string"
+          },
+          "purpose": {
+            "type": "string"
+          },
+          "phone_number": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "booking_reference",
+          "last_name",
+          "phone_number",
+          "purpose"
+        ]
+      }
+    }
+  ],
+  "get_phone_checkin_info": [
+    {
+      "name": "get_phone_checkin_info",
+      "description": "get_phone_checkin_info(airline: string, flight_number: string) -> object - Auto-generated tool for get phone checkin info.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "airline": {
+            "type": "string"
+          },
+          "flight_number": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "airline",
+          "flight_number"
+        ]
+      }
+    }
+  ],
+  "retrieve_booking_by_email": [
+    {
+      "name": "retrieve_booking_by_email",
+      "description": "retrieve_booking_by_email(email: string) -> object - Auto-generated tool for retrieve booking by email.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "email": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "email"
+        ]
+      }
+    }
+  ],
+  "get_flight_status": [
+    {
+      "name": "get_flight_status",
+      "description": "get_flight_status(confirmation_number: string) -> object - Auto-generated tool for get flight status.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "confirmation_number": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "confirmation_number"
+        ]
+      }
+    }
+  ],
+  "check_trip_details": [
+    {
+      "name": "check_trip_details",
+      "description": "check_trip_details() -> object - Auto-generated tool for check trip details.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "travel_dates": {
+            "type": "string"
+          },
+          "excursion_name": {
+            "type": "string"
+          },
+          "booking_reference": {
+            "type": "string"
+          },
+          "last_name": {
+            "type": "string"
+          },
+          "email": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "trip_end_date": {
+            "type": "string"
+          },
+          "end_date": {
+            "type": "string"
+          },
+          "booking_date": {
+            "type": "string"
+          },
+          "start_date": {
+            "type": "string"
+          },
+          "travel_start_date": {
+            "type": "string"
+          },
+          "travel_end_date": {
+            "type": "string"
+          },
+          "trip_start_date": {
+            "type": "string"
+          },
+          "tour_name": {
+            "type": "string"
+          },
+          "destination": {
+            "type": "string"
+          }
+        },
+        "required": []
+      }
+    }
+  ],
+  "check_trip_insurance_coverage": [
+    {
+      "name": "check_trip_insurance_coverage",
+      "description": "check_trip_insurance_coverage() -> object - Auto-generated tool for check trip insurance coverage.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "travel_dates": {
+            "type": "string"
+          },
+          "trip_type": {
+            "type": "string"
+          },
+          "trip_date": {
+            "type": "string"
+          },
+          "booking_reference": {
+            "type": "string"
+          },
+          "insurance_company": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "trip_itinerary": {
+            "type": "string"
+          },
+          "departure_date": {
+            "type": "string"
+          },
+          "trip_end_date": {
+            "type": "string"
+          },
+          "end_date": {
+            "type": "string"
+          },
+          "arrival_city": {
+            "type": "string"
+          },
+          "departure_city": {
+            "type": "string"
+          },
+          "return_date": {
+            "type": "string"
+          },
+          "destination": {
+            "type": "string"
+          },
+          "trip_start_date": {
+            "type": "string"
+          },
+          "last_name": {
+            "type": "string"
+          },
+          "purchase_date": {
+            "type": "string"
+          },
+          "policy_name": {
+            "type": "string"
+          },
+          "insurance_plan": {
+            "type": "string"
+          },
+          "travel_date": {
+            "type": "string"
+          },
+          "date_of_birth": {
+            "type": "string"
+          },
+          "traveler_name": {
+            "type": "string"
+          },
+          "email": {
+            "type": "string"
+          },
+          "policy_number": {
+            "type": "string"
+          },
+          "full_name": {
+            "type": "string"
+          },
+          "booking_date": {
+            "type": "string"
+          },
+          "trip_dates": {
+            "type": "string"
+          },
+          "start_date": {
+            "type": "string"
+          },
+          "issuer": {
+            "type": "string"
+          },
+          "travel_end_date": {
+            "type": "string"
+          },
+          "travel_start_date": {
+            "type": "string"
+          }
+        },
+        "required": []
+      }
+    }
+  ],
+  "check_trip_offers": [
+    {
+      "name": "check_trip_offers",
+      "description": "check_trip_offers() -> object - Auto-generated tool for check trip offers.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "travel_dates": {
+            "type": "string"
+          },
+          "offer_type": {
+            "type": "string"
+          },
+          "traveler_count": {
+            "type": "number"
+          },
+          "activity": {
+            "type": "string"
+          },
+          "excursion_type": {
+            "type": "string"
+          },
+          "date": {
+            "type": "string"
+          },
+          "budget_per_night": {
+            "type": "number"
+          },
+          "type": {
+            "type": "string"
+          },
+          "subcategory": {
+            "type": "string"
+          },
+          "travel_month": {
+            "type": "string"
+          },
+          "budget_per_person": {
+            "type": "number"
+          },
+          "activities": {
+            "type": "string"
+          },
+          "types": {
+            "type": "string"
+          },
+          "activity_type": {
+            "type": "string"
+          },
+          "budget": {
+            "type": "number"
+          },
+          "travel_companions": {
+            "type": "string"
+          },
+          "package_type": {
+            "type": "string"
+          },
+          "travelers": {
+            "type": "number"
+          },
+          "price_range": {
+            "type": "string"
+          },
+          "duration_days": {
+            "type": "number"
+          },
+          "hotel_type": {
+            "type": "string"
+          },
+          "location": {
+            "type": "string"
+          },
+          "transportation": {
+            "type": "string"
+          },
+          "destination": {
+            "type": "string"
+          },
+          "preferences": {
+            "type": "string"
+          },
+          "duration": {
+            "type": "number"
+          },
+          "duration_nights": {
+            "type": "number"
+          },
+          "trip_type": {
+            "type": "string"
+          },
+          "offer_types": {
+            "type": "string"
+          },
+          "traveler_type": {
+            "type": "string"
+          },
+          "month": {
+            "type": "string"
+          },
+          "region": {
+            "type": "string"
+          },
+          "sub_category": {
+            "type": "string"
+          },
+          "excursion": {
+            "type": "string"
+          },
+          "destination_type": {
+            "type": "string"
+          },
+          "travel_class": {
+            "type": "string"
+          },
+          "travel_time": {
+            "type": "string"
+          },
+          "excursion_name": {
+            "type": "string"
+          },
+          "date_range": {
+            "type": "string"
+          },
+          "season": {
+            "type": "string"
+          },
+          "hotel_category": {
+            "type": "string"
+          },
+          "category": {
+            "type": "string"
+          },
+          "group_size": {
+            "type": "number"
+          },
+          "trip_length_days": {
+            "type": "number"
+          },
+          "categories": {
+            "type": "string"
+          },
+          "interests": {
+            "type": "string"
+          },
+          "climate": {
+            "type": "string"
+          },
+          "destinations": {
+            "type": "string"
+          },
+          "city": {
+            "type": "string"
+          },
+          "budget_per_day": {
+            "type": "number"
+          },
+          "travel_window": {
+            "type": "string"
+          },
+          "hotel_rating": {
+            "type": "string"
+          },
+          "travel_style": {
+            "type": "string"
+          },
+          "max_budget": {
+            "type": "number"
+          }
+        },
+        "required": []
+      }
+    }
+  ],
+  "check_trip_plan": [
+    {
+      "name": "check_trip_plan",
+      "description": "check_trip_plan() -> object - Auto-generated tool for check trip plan.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "travel_dates": {
+            "type": "string"
+          },
+          "booking_reference": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "booking_name": {
+            "type": "string"
+          },
+          "trip_end_date": {
+            "type": "string"
+          },
+          "end_date": {
+            "type": "string"
+          },
+          "departure_city": {
+            "type": "string"
+          },
+          "travel_start_date": {
+            "type": "string"
+          },
+          "destination_city": {
+            "type": "string"
+          },
+          "booking_month": {
+            "type": "string"
+          },
+          "trip_start_date": {
+            "type": "string"
+          },
+          "last_name": {
+            "type": "string"
+          },
+          "travel_month": {
+            "type": "string"
+          },
+          "traveler_name": {
+            "type": "string"
+          },
+          "email": {
+            "type": "string"
+          },
+          "traveler_id": {
+            "type": "string"
+          },
+          "trip_dates": {
+            "type": "string"
+          },
+          "start_date": {
+            "type": "string"
+          },
+          "travel_end_date": {
+            "type": "string"
+          },
+          "destination": {
+            "type": "string"
+          }
+        },
+        "required": []
+      }
+    }
+  ],
+  "book_activity": [
+    {
+      "name": "book_activity",
+      "description": "book_activity(activity: string, booking_reference: string, date: string, location: string) -> object - Auto-generated tool for book activity.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "location": {
+            "type": "string"
+          },
+          "activity": {
+            "type": "string"
+          },
+          "date": {
+            "type": "string"
+          },
+          "booking_reference": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "activity",
+          "booking_reference",
+          "date",
+          "location"
+        ]
+      }
+    }
+  ],
+  "check_trip_prices": [
+    {
+      "name": "check_trip_prices",
+      "description": "check_trip_prices() -> object - Auto-generated tool for check trip prices.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "trip_type": {
+            "type": "string"
+          },
+          "flexible_dates": {
+            "type": "number"
+          },
+          "include": {
+            "type": "string"
+          },
+          "excursions": {
+            "type": "string"
+          },
+          "end_date": {
+            "type": "string"
+          },
+          "activity": {
+            "type": "string"
+          },
+          "departure_city": {
+            "type": "string"
+          },
+          "origin": {
+            "type": "string"
+          },
+          "accommodation_preference": {
+            "type": "string"
+          },
+          "travel_class": {
+            "type": "string"
+          },
+          "passengers": {
+            "type": "string"
+          },
+          "start_date": {
+            "type": "string"
+          },
+          "excursion_types": {
+            "type": "string"
+          },
+          "destination": {
+            "type": "string"
+          }
+        },
+        "required": []
+      }
+    }
+  ],
+  "search_trip_prices": [
+    {
+      "name": "search_trip_prices",
+      "description": "search_trip_prices() -> object - Auto-generated tool for search trip prices.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "preferences": {
+            "type": "string"
+          },
+          "trip_type": {
+            "type": "string"
+          },
+          "include": {
+            "type": "string"
+          },
+          "end_date": {
+            "type": "string"
+          },
+          "excursion_type": {
+            "type": "string"
+          },
+          "departure_city": {
+            "type": "string"
+          },
+          "origin": {
+            "type": "string"
+          },
+          "hotel_category": {
+            "type": "string"
+          },
+          "destination_type": {
+            "type": "string"
+          },
+          "accommodation_type": {
+            "type": "string"
+          },
+          "excursion_preferences": {
+            "type": "string"
+          },
+          "budget": {
+            "type": "string"
+          },
+          "package_type": {
+            "type": "string"
+          },
+          "interests": {
+            "type": "string"
+          },
+          "passengers": {
+            "type": "string"
+          },
+          "hotel_rating": {
+            "type": "number"
+          },
+          "start_date": {
+            "type": "string"
+          },
+          "excursion_types": {
+            "type": "string"
+          },
+          "destination": {
+            "type": "string"
+          }
+        },
+        "required": []
+      }
+    }
+  ],
+  "choose_seat": [
+    {
+      "name": "choose_seat",
+      "description": "choose_seat(booking_reference: string) -> object - Auto-generated tool for choose seat.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "seat_number": {
+            "type": "string"
+          },
+          "booking_reference": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "booking_reference"
+        ]
+      }
+    }
+  ],
+  "send_boarding_pass_email": [
+    {
+      "name": "send_boarding_pass_email",
+      "description": "send_boarding_pass_email() -> object - Auto-generated tool for send boarding pass email.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "passenger_name": {
+            "type": "string"
+          },
+          "travel_date": {
+            "type": "string"
+          },
+          "airline": {
+            "type": "string"
+          },
+          "booking_reference": {
+            "type": "string"
+          },
+          "flight_date": {
+            "type": "string"
+          },
+          "flight_number": {
+            "type": "string"
+          },
+          "reservation_id": {
+            "type": "string"
+          },
+          "last_name": {
+            "type": "string"
+          },
+          "destination": {
+            "type": "string"
+          }
+        },
+        "required": []
+      }
+    }
+  ],
+  "send_email": [
+    {
+      "name": "send_email",
+      "description": "send_email(document: string, flight_date: string, flight_number: string, passenger_name: string) -> object - Auto-generated tool for send email.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "passenger_name": {
+            "type": "string"
+          },
+          "document": {
+            "type": "string"
+          },
+          "flight_date": {
+            "type": "string"
+          },
+          "flight_number": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "document",
+          "flight_date",
+          "flight_number",
+          "passenger_name"
+        ]
+      }
+    }
+  ],
+  "check_flight_checkin_status": [
+    {
+      "name": "check_flight_checkin_status",
+      "description": "check_flight_checkin_status() -> object - Auto-generated tool for check flight checkin status.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "booking_reference": {
+            "type": "string"
+          },
+          "confirmation_number": {
+            "type": "string"
+          },
+          "airline": {
+            "type": "string"
+          },
+          "flight_number": {
+            "type": "string"
+          },
+          "last_name": {
+            "type": "string"
+          }
+        },
+        "required": []
+      }
+    }
+  ],
+  "initiate_refund": [
+    {
+      "name": "initiate_refund",
+      "description": "initiate_refund(booking_reference: string) -> object - Auto-generated tool for initiate refund.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "travel_dates": {
+            "type": "string"
+          },
+          "expenses": {
+            "type": "string"
+          },
+          "compensation_only": {
+            "type": "number"
+          },
+          "compensation_type": {
+            "type": "string"
+          },
+          "trip_type": {
+            "type": "string"
+          },
+          "transaction_date": {
+            "type": "string"
+          },
+          "booking_reference": {
+            "type": "string"
+          },
+          "mode_of_travel": {
+            "type": "string"
+          },
+          "document_type": {
+            "type": "string"
+          },
+          "flight_number": {
+            "type": "string"
+          },
+          "reason": {
+            "type": "string"
+          },
+          "last_name": {
+            "type": "string"
+          },
+          "contact_method": {
+            "type": "string"
+          },
+          "refund_method": {
+            "type": "string"
+          },
+          "cancelled_flight_date": {
+            "type": "string"
+          },
+          "cancellation_date": {
+            "type": "string"
+          },
+          "issue": {
+            "type": "string"
+          },
+          "amount": {
+            "type": "number"
+          },
+          "expense_types": {
+            "type": "string"
+          },
+          "trip_dates": {
+            "type": "string"
+          },
+          "expense_type": {
+            "type": "string"
+          },
+          "documents": {
+            "type": "string"
+          },
+          "original_flight_date": {
+            "type": "string"
+          },
+          "destination": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "booking_reference"
+        ]
+      }
+    }
+  ],
+  "get_refund": [
+    {
+      "name": "get_refund",
+      "description": "get_refund(booking_reference: string) -> object - Auto-generated tool for get refund.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "purchase_date": {
+            "type": "string"
+          },
+          "last_name": {
+            "type": "string"
+          },
+          "booking_reference": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "booking_reference"
+        ]
+      }
+    }
+  ],
+  "query_booking_details": [
+    {
+      "name": "query_booking_details",
+      "description": "query_booking_details(booking_reference: string, last_name: string) -> object - Auto-generated tool for query booking details.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "last_name": {
+            "type": "string"
+          },
+          "booking_reference": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "booking_reference",
+          "last_name"
+        ]
+      }
+    }
+  ],
+  "check_refund_eligibility": [
+    {
+      "name": "check_refund_eligibility",
+      "description": "check_refund_eligibility(booking_reference: string, last_name: string) -> object - Auto-generated tool for check refund eligibility.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "flight_number": {
+            "type": "string"
+          },
+          "booking_reference": {
+            "type": "string"
+          },
+          "delay_hours": {
+            "type": "number"
+          },
+          "last_name": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "booking_reference",
+          "last_name"
+        ]
+      }
+    }
+  ],
+  "update_refund_method": [
+    {
+      "name": "update_refund_method",
+      "description": "update_refund_method(booking_reference: string, last_name: string, refund_method: string) -> object - Auto-generated tool for update refund method.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "refund_method": {
+            "type": "string"
+          },
+          "last_name": {
+            "type": "string"
+          },
+          "booking_reference": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "booking_reference",
+          "last_name",
+          "refund_method"
+        ]
+      }
+    }
+  ],
+  "query_compensation_eligibility": [
+    {
+      "name": "query_compensation_eligibility",
+      "description": "query_compensation_eligibility(booking_reference: string, last_name: string) -> object - Auto-generated tool for query compensation eligibility.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "last_name": {
+            "type": "string"
+          },
+          "booking_reference": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "booking_reference",
+          "last_name"
+        ]
+      }
+    }
+  ],
+  "issue_travel_credit_voucher": [
+    {
+      "name": "issue_travel_credit_voucher",
+      "description": "issue_travel_credit_voucher(amount_percentage: number, booking_reference: string, last_name: string) -> object - Auto-generated tool for issue travel credit voucher.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "amount_percentage": {
+            "type": "number"
+          },
+          "last_name": {
+            "type": "string"
+          },
+          "booking_reference": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "amount_percentage",
+          "booking_reference",
+          "last_name"
+        ]
+      }
+    }
+  ],
+  "issue_travel_voucher": [
+    {
+      "name": "issue_travel_voucher",
+      "description": "issue_travel_voucher(booking_reference: string) -> object - Auto-generated tool for issue travel voucher.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "booking_reference": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "booking_reference"
+        ]
+      }
+    }
+  ],
+  "escalate_to_human_agent": [
+    {
+      "name": "escalate_to_human_agent",
+      "description": "escalate_to_human_agent(reason: string) -> object - Auto-generated tool for escalate to human agent.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "preferred_channel": {
+            "type": "string"
+          },
+          "booking_reference": {
+            "type": "string"
+          },
+          "reason": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "preferred_time": {
+            "type": "string"
+          },
+          "callback_number": {
+            "type": "string"
+          },
+          "phone_number": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "reason"
+        ]
+      }
+    }
+  ],
+  "update_flight_date": [
+    {
+      "name": "update_flight_date",
+      "description": "update_flight_date(booking_reference: string, new_return_date: string) -> object - Auto-generated tool for update flight date.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "new_return_date": {
+            "type": "string"
+          },
+          "booking_reference": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "booking_reference",
+          "new_return_date"
+        ]
+      }
+    }
+  ],
+  "get_boarding_pass_pdf": [
+    {
+      "name": "get_boarding_pass_pdf",
+      "description": "get_boarding_pass_pdf() -> object - Auto-generated tool for get boarding pass pdf.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "passenger_name": {
+            "type": "string"
+          },
+          "airline": {
+            "type": "string"
+          },
+          "booking_reference": {
+            "type": "string"
+          },
+          "email": {
+            "type": "string"
+          },
+          "email_hint": {
+            "type": "string"
+          },
+          "print_location": {
+            "type": "string"
+          },
+          "flight_number": {
+            "type": "string"
+          },
+          "last_name": {
+            "type": "string"
+          }
+        },
+        "required": []
+      }
+    }
+  ],
+  "verify_booking_and_get_boarding_pass": [
+    {
+      "name": "verify_booking_and_get_boarding_pass",
+      "description": "verify_booking_and_get_boarding_pass(first_initial: string, flight_number: string, last_name: string) -> object - Auto-generated tool for verify booking and get boarding pass.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "last_name": {
+            "type": "string"
+          },
+          "first_initial": {
+            "type": "string"
+          },
+          "flight_number": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "first_initial",
+          "flight_number",
+          "last_name"
+        ]
+      }
+    }
+  ],
+  "purchase_flight_insurance": [
+    {
+      "name": "purchase_flight_insurance",
+      "description": "purchase_flight_insurance() -> object - Auto-generated tool for purchase flight insurance.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "confirmation_number": {
+            "type": "string"
+          },
+          "booking_reference": {
+            "type": "string"
+          },
+          "end_date": {
+            "type": "string"
+          },
+          "name_on_policy": {
+            "type": "string"
+          },
+          "origin": {
+            "type": "string"
+          },
+          "last_name": {
+            "type": "string"
+          },
+          "departure": {
+            "type": "string"
+          },
+          "airline": {
+            "type": "string"
+          },
+          "ticket_price": {
+            "type": "number"
+          },
+          "travelers": {
+            "type": "number"
+          },
+          "reservation_number": {
+            "type": "string"
+          },
+          "start_date": {
+            "type": "string"
+          },
+          "plan": {
+            "type": "string"
+          },
+          "destination": {
+            "type": "string"
+          }
+        },
+        "required": []
+      }
+    }
+  ],
+  "retrieve_flight_insurance": [
+    {
+      "name": "retrieve_flight_insurance",
+      "description": "retrieve_flight_insurance(booking_reference: string) -> object - Auto-generated tool for retrieve flight insurance.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "booking_reference": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "booking_reference"
+        ]
+      }
+    }
+  ],
+  "purchase_trip_insurance": [
+    {
+      "name": "purchase_trip_insurance",
+      "description": "purchase_trip_insurance(destination: string, end_date: string, plan: string, start_date: string) -> object - Auto-generated tool for purchase trip insurance.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "medical_conditions": {
+            "type": "string"
+          },
+          "trip_type": {
+            "type": "string"
+          },
+          "activities": {
+            "type": "string"
+          },
+          "travelers": {
+            "type": "number"
+          },
+          "end_date": {
+            "type": "string"
+          },
+          "pre_existing_conditions": {
+            "type": "number"
+          },
+          "start_date": {
+            "type": "string"
+          },
+          "plan": {
+            "type": "string"
+          },
+          "coverage": {
+            "type": "string"
+          },
+          "destination": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "destination",
+          "end_date",
+          "plan",
+          "start_date"
+        ]
+      }
+    }
+  ],
+  "search_flight_insurance": [
+    {
+      "name": "search_flight_insurance",
+      "description": "search_flight_insurance() -> object - Auto-generated tool for search flight insurance.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "trip_type": {
+            "type": "string"
+          },
+          "end_date": {
+            "type": "string"
+          },
+          "coverage_needs": {
+            "type": "string"
+          },
+          "departure_city": {
+            "type": "string"
+          },
+          "origin": {
+            "type": "string"
+          },
+          "coverage": {
+            "type": "string"
+          },
+          "trip_cost": {
+            "type": "number"
+          },
+          "type": {
+            "type": "string"
+          },
+          "departure": {
+            "type": "string"
+          },
+          "medical_conditions": {
+            "type": "string"
+          },
+          "airline": {
+            "type": "string"
+          },
+          "travelers": {
+            "type": "number"
+          },
+          "pre_existing_conditions": {
+            "type": "number"
+          },
+          "start_date": {
+            "type": "string"
+          },
+          "destination": {
+            "type": "string"
+          }
+        },
+        "required": []
+      }
+    }
+  ],
+  "search_trip": [
+    {
+      "name": "search_trip",
+      "description": "search_trip() -> object - Auto-generated tool for search trip.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "preferences": {
+            "type": "string"
+          },
+          "duration": {
+            "type": "string"
+          },
+          "duration_nights": {
+            "type": "number"
+          },
+          "experience_type": {
+            "type": "string"
+          },
+          "trip_type": {
+            "type": "string"
+          },
+          "accommodation": {
+            "type": "number"
+          },
+          "return_window": {
+            "type": "string"
+          },
+          "departure_date": {
+            "type": "string"
+          },
+          "budget_max": {
+            "type": "number"
+          },
+          "must_see": {
+            "type": "string"
+          },
+          "excursion_type": {
+            "type": "string"
+          },
+          "origin": {
+            "type": "string"
+          },
+          "return_date": {
+            "type": "string"
+          },
+          "departure_window": {
+            "type": "string"
+          },
+          "destination_type": {
+            "type": "string"
+          },
+          "trip_duration": {
+            "type": "string"
+          },
+          "budget_per_person": {
+            "type": "number"
+          },
+          "activities": {
+            "type": "string"
+          },
+          "activity_type": {
+            "type": "string"
+          },
+          "budget": {
+            "type": "number"
+          },
+          "cuisine_preference": {
+            "type": "string"
+          },
+          "package_type": {
+            "type": "string"
+          },
+          "trip_length_days": {
+            "type": "number"
+          },
+          "interests": {
+            "type": "string"
+          },
+          "hotel_location": {
+            "type": "string"
+          },
+          "include_hotel": {
+            "type": "number"
+          },
+          "passengers": {
+            "type": "number"
+          },
+          "duration_days": {
+            "type": "number"
+          },
+          "interest": {
+            "type": "string"
+          },
+          "excursion_types": {
+            "type": "string"
+          },
+          "max_budget": {
+            "type": "number"
+          },
+          "destination": {
+            "type": "string"
+          }
+        },
+        "required": []
+      }
+    }
+  ],
+  "search_trip_insurance": [
+    {
+      "name": "search_trip_insurance",
+      "description": "search_trip_insurance(destination: string, end_date: string, start_date: string) -> object - Auto-generated tool for search trip insurance.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "trip_type": {
+            "type": "string"
+          },
+          "medical_conditions": {
+            "type": "string"
+          },
+          "activities": {
+            "type": "string"
+          },
+          "coverage_type": {
+            "type": "string"
+          },
+          "budget": {
+            "type": "number"
+          },
+          "coverage_types": {
+            "type": "string"
+          },
+          "travelers": {
+            "type": "number"
+          },
+          "end_date": {
+            "type": "string"
+          },
+          "pre_existing_conditions": {
+            "type": "number"
+          },
+          "coverage_needs": {
+            "type": "string"
+          },
+          "start_date": {
+            "type": "string"
+          },
+          "coverage": {
+            "type": "string"
+          },
+          "destination": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "destination",
+          "end_date",
+          "start_date"
+        ]
+      }
+    }
+  ]
+}
